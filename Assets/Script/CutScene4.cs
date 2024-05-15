@@ -42,7 +42,7 @@ public class CutScene4 : MonoBehaviour
         playerController.enabled = false;
         playerController.transform.position = transform.position + new Vector3(2, 0, 2);
         cameraY.rotation = Quaternion.identity;
-        vCam4.SetActive(true);
+        //vCam4.SetActive(true);
         //Wait camera transition
         yield return new WaitForSeconds(2);
         ui.BlackIn(false);
@@ -53,7 +53,7 @@ public class CutScene4 : MonoBehaviour
         yield return new WaitForSeconds(4);
         audioSource.Play();
         yield return new WaitForSeconds(2);
-        vCam4.SetActive(false);
+        //vCam4.SetActive(false);
         cutScene3.CutSceneStart();
         //Wait camera transition
         yield return new WaitForSeconds(2);

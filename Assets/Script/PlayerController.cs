@@ -196,7 +196,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    float rotationX;
+    public float rotationX;
 
     void CameraRotation()
     {
