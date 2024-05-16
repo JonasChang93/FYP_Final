@@ -49,9 +49,9 @@ public class CutScene4 : MonoBehaviour
         enemy4DeadAnimator.gameObject.SetActive(true);
         enemy4DeadAnimator.PlayAnimation();
         //Wait Timeline transition, change bgm
-        audioSource.clip = clip;
+        //audioSource.clip = clip;
         yield return new WaitForSeconds(4);
-        audioSource.Play();
+        //audioSource.Play();
         yield return new WaitForSeconds(2);
         //vCam4.SetActive(false);
         cutScene3.CutSceneStart();
@@ -63,5 +63,11 @@ public class CutScene4 : MonoBehaviour
         enemy5.SetActive(true);
         inCutScene = false;
         //CutScene1 gameObject die
+    }
+
+    public void CutScene4BGM()
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
     }
 }
