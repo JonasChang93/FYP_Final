@@ -55,6 +55,7 @@ public class PlayerAnimator : MonoBehaviour
 
     void Attack()
     {
+        if (PlayerData.instance.isDead) return;
         if (isAttacking)
         {
             timerOnOff = false;

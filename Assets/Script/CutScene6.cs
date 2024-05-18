@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEditor.Rendering;
 using UnityEngine;
 
 public class CutScene6 : MonoBehaviour
 {
+    public GameObject miniMap, miniMapLocator;
     public Transform cameraY;
     public GameObject vCam6;
     public PlayerController playerController;
@@ -24,12 +26,16 @@ public class CutScene6 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        miniMapLocator.SetActive(true);
+        miniMap.SetActive(true);
         StartCoroutine(CutSceneStart());
         characterController.radius = 0.1f;
     }
 
     private void OnTriggerExit(Collider other)
     {
+        miniMapLocator.SetActive(false);
+        miniMap.SetActive(false);
         StartCoroutine(CutSceneEnd());
         characterController.radius = 0.25f;
     }
