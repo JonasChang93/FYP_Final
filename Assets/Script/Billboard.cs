@@ -11,16 +11,19 @@ public class Billboard : MonoBehaviour
         {
             //If under distance, set child be true
             float distance = Vector3.Distance(PlayerData.instance.transform.position, transform.position);
-            if (distance < 4)
+            Vector3 targetDirection = Camera.main.transform.position - transform.position;
+            targetDirection.y = 0f;
+            transform.rotation = Quaternion.LookRotation(targetDirection);
+            if (gameObject.name != "CanvasPlayer")
             {
-                if (gameObject.name != "CanvasPlayer") child.SetActive(true);
-                Vector3 targetDirection = Camera.main.transform.position - transform.position;
-                targetDirection.y = 0f;
-                transform.rotation = Quaternion.LookRotation(targetDirection);
-            }
-            else
-            {
-                if (gameObject.name != "CanvasPlayer") child.SetActive(false);
+                if (distance < 2)
+                {
+                    child.SetActive(true);
+                }
+                else
+                {
+                    child.SetActive(false);
+                }
             }
         }
         else

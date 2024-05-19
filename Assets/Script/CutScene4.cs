@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class CutScene4 : MonoBehaviour
 {
-    bool inCutScene = false;
     public GameObject vCam4;
     PlayerController playerController;
     public CutScene3 cutScene3;
-    public Enemy4DeadAnimator enemy4DeadAnimator;
+    public PlayableDirector playableDirector;
     public GameObject enemy5;
     public UIManagerGame ui;
     public Transform cameraY;
@@ -30,12 +30,11 @@ public class CutScene4 : MonoBehaviour
 
     public void BossDead1()
     {
-        if (!inCutScene) StartCoroutine(CutSceneEnd());
+        StartCoroutine(CutSceneEnd());
     }
 
     IEnumerator CutSceneEnd()
     {
-        inCutScene = true;
         ui.BlackOut(true);
         //Wait black
         yield return new WaitForSeconds(1);
@@ -46,8 +45,8 @@ public class CutScene4 : MonoBehaviour
         //Wait camera transition
         yield return new WaitForSeconds(2);
         ui.BlackIn(false);
-        enemy4DeadAnimator.gameObject.SetActive(true);
-        enemy4DeadAnimator.PlayAnimation();
+        playableDirector.gameObject.SetActive(true);
+        playableDirector.Play();
         //Wait Timeline transition, change bgm
         //audioSource.clip = clip;
         yield return new WaitForSeconds(4);
@@ -59,10 +58,8 @@ public class CutScene4 : MonoBehaviour
         yield return new WaitForSeconds(2);
         gameObject.SetActive(false);
         playerController.enabled = true;
-        Destroy(enemy4DeadAnimator.gameObject);
+        Destroy(playableDirector.gameObject);
         enemy5.SetActive(true);
-        inCutScene = false;
-        //CutScene1 gameObject die
     }
 
     public void CutScene4BGM()

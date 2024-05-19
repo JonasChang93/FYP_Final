@@ -113,8 +113,6 @@ public class EnemyType1Data : MonoBehaviour
         {
             //Start cutScene
             cutScene5.BossDead2();
-            //Wait enemy dead
-            yield return new WaitForSeconds(1);
         }
         PlayerData.instance.LevelCheck();
         Destroy(gameObject);

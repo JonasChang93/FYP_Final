@@ -6281,9 +6281,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 180962309}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1619656288}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6843,9 +6843,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 180962309}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1619656288}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7177,6 +7177,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 180962312}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4143364326974627401, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1619656288}
     - targetCorrespondingSourceObject: {fileID: 5373325105941296643, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2094777541}
@@ -8110,6 +8113,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4143364326974627400, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
   m_PrefabInstance: {fileID: 1130933181}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1619656288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071490630}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cbf07d391dadd8438a39caf07e31b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tutorial: {fileID: 180962309}
 --- !u!1 &1641806119
 GameObject:
   m_ObjectHideFlags: 0

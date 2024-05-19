@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class CutScene5 : MonoBehaviour
 {
-    bool inCutScene = false;
-    public GameObject vCam5;
     PlayerController playerController;
+    Shooting shooting;
+
+    public GameObject vCam5;
     public UIManagerGame ui;
+    public Transform camZ;
+    public PlayableDirector playableDirector;
 
     // Start is called before the first frame update
     void Start()
     {
         playerController = PlayerData.instance.gameObject.GetComponent<PlayerController>();
+        shooting = PlayerData.instance.gameObject.GetComponent<Shooting>();
     }
 
     // Update is called once per frame
@@ -24,20 +29,22 @@ public class CutScene5 : MonoBehaviour
 
     public void BossDead2()
     {
-        if (!inCutScene) StartCoroutine(CutSceneEnd());
+        playableDirector.gameObject.SetActive(true);
+        playableDirector.Play();
+
+        playerController.enabled = false;
+        shooting.enabled = false;
+        playerController.transform.position = transform.position + new Vector3(-5, 0, -5);
+
+        camZ.localRotation = Quaternion.identity;
+        camZ.parent.localRotation = Quaternion.identity;
+        playerController.rotationX = 0;
     }
 
-    IEnumerator CutSceneEnd()
+    public void CutSceneStart()
     {
-        inCutScene = true;
-        ui.BlackOut(true);
-        //Wait black
-        yield return new WaitForSeconds(1);
-        ui.BlackIn(false);
         playerController.enabled = false;
         vCam5.SetActive(true);
         ui.PlayVideo();
-        inCutScene = false;
-        //CutScene1 gameObject die
     }
 }
