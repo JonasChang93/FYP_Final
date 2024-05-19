@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &74778626 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8947632115727056206, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-  m_PrefabInstance: {fileID: 1130933181}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &98935511
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,26 +727,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245527032}
   m_CullTransparentMesh: 1
---- !u!1 &256799633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8203123758576923138, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-  m_PrefabInstance: {fileID: 1130933181}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &256799638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256799633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 10, y: -10}
-  m_UseGraphicAlpha: 1
 --- !u!1 &263168671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4655557926851350965, guid: edce1260c9a955f4d95052486f826efe, type: 3}
@@ -6923,10 +6892,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 949951430}
     - target: {fileID: 1899460211140365530, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 74778626}
-    - target: {fileID: 1899460211140365530, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 949951430}
@@ -6934,18 +6899,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 949951428}
-    - target: {fileID: 1899460211140365530, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SaveSetting
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899460211140365530, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CloseDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 1899460211140365530, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UIMS, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 2187658245173301709, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6957,26 +6910,6 @@ PrefabInstance:
     - target: {fileID: 2805103912227006704, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3554994651075476644, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7c7ea54da54c64448a106a2ba6a71eea, type: 3}
-    - target: {fileID: 3554994651075476644, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3554994651075476644, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3554994651075476644, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3554994651075476644, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4143364326974627400, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       propertyPath: m_Pivot.x
@@ -7091,10 +7024,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1502133500}
     - target: {fileID: 5983382694287265973, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 1817228566}
-    - target: {fileID: 5983382694287265973, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 949951430}
@@ -7102,18 +7031,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 949951428}
-    - target: {fileID: 5983382694287265973, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadSetting
-      objectReference: {fileID: 0}
-    - target: {fileID: 5983382694287265973, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CloseDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 5983382694287265973, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UIMS, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 6223574502919305192, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7134,34 +7051,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 949951428}
-    - target: {fileID: 6669184434116897563, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7c7ea54da54c64448a106a2ba6a71eea, type: 3}
-    - target: {fileID: 6669184434116897563, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6669184434116897563, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6669184434116897563, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6669184434116897563, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 7291911261009195613, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 949951430}
-    - target: {fileID: 7784039543143948238, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7803343694307006143, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7180,12 +7073,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4143364326974627401, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1619656288}
-    - targetCorrespondingSourceObject: {fileID: 5373325105941296643, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2094777541}
-    - targetCorrespondingSourceObject: {fileID: 8203123758576923138, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 256799638}
   m_SourcePrefab: {fileID: 100100000, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
 --- !u!114 &1130933182 stripped
 MonoBehaviour:
@@ -8314,17 +8201,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673434707}
   m_CullTransparentMesh: 1
---- !u!114 &1817228566 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4065598141334147891, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-  m_PrefabInstance: {fileID: 1130933181}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1867439233
 GameObject:
   m_ObjectHideFlags: 0
@@ -8716,26 +8592,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.5, y: -0.5}
   m_SizeDelta: {x: -1, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2094777536 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5373325105941296643, guid: fb4630a314f9b5943aecbf55ecd1879d, type: 3}
-  m_PrefabInstance: {fileID: 1130933181}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2094777541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094777536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 10, y: -10}
-  m_UseGraphicAlpha: 1
 --- !u!1001 &1319318301652499896
 PrefabInstance:
   m_ObjectHideFlags: 0
